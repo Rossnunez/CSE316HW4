@@ -31,26 +31,26 @@ export default function MUIDeleteModal() {
 
     return (
         <Modal
-            open={store.listMarkedForDeletion !== null}
+            open={store.currentModal == "DELETE_LIST"}
         >
             <Box sx={style}>
                 <div className="modal-dialog">
-                <header className="dialog-header">
-                    Delete the {name} Top 5 List?
-                </header>
-                <div id="confirm-cancel-container">
-                    <button
-                        id="dialog-yes-button"
-                        className="modal-button"
-                        onClick={handleDeleteList}
-                    >Confirm</button>
-                    <button
-                        id="dialog-no-button"
-                        className="modal-button"
-                        onClick={handleCloseModal}
-                    >Cancel</button>
+                    <header className="dialog-header">
+                        Delete the {name} Top 5 List?
+                    </header>
+                    <div id="confirm-cancel-container">
+                        <button
+                            id="dialog-yes-button"
+                            className="modal-button"
+                            onClick={handleDeleteList}
+                        >Confirm</button>
+                        <button
+                            id="dialog-no-button"
+                            className="modal-button"
+                            onClick={handleCloseModal}
+                        >Cancel</button>
+                    </div>
                 </div>
-            </div>
             </Box>
         </Modal>
     );
