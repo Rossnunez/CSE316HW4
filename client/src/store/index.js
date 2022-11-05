@@ -231,9 +231,9 @@ function GlobalStoreContextProvider(props) {
     // THESE ARE THE FUNCTIONS THAT WILL UPDATE OUR STORE AND
     // DRIVE THE STATE OF THE APPLICATION. WE'LL CALL THESE IN 
     // RESPONSE TO EVENTS INSIDE OUR COMPONENTS.
-    // store.clearTransactions = function () {
-    //     tps.clearAllTransactions();
-    // }
+    store.clearTransactions = function () {
+        tps.clearAllTransactions();
+    }
 
     // THIS FUNCTION PROCESSES CHANGING A LIST NAME
     store.changeListName = function (id, newName) {
