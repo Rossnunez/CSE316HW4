@@ -155,7 +155,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  /* margin-top: 60px; */
+  margin-top: 15px;
 }
 
 .list-card,
