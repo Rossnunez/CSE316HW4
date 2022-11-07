@@ -257,6 +257,7 @@ function GlobalStoreContextProvider(props) {
                                         playlist: playlist
                                     }
                                 });
+                                history.push("/playlist/" + playlist._id);
                             }
                         }
                         getListPairs(playlist);
