@@ -11,7 +11,6 @@ export default function MUIRegisterError() {
     }
 
     let message = auth.errMsg
-
     return (
         <Modal
             open={auth.badLogin == true}

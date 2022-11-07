@@ -139,7 +139,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 #add-list-button {
@@ -155,7 +155,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .list-card,
@@ -366,6 +366,10 @@ h2 {
 
 .modal-song-name {
   font-weight: bold;
+}
+
+button {
+  z-index: 2;
 }
 
 /* ANIMATIONS
